@@ -201,4 +201,28 @@ button:hover {
     .logo-corner {
         max-width: 100px;
     }
+}
+
+select {
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid #8b5a2b; /* Saddle brown */
+    border-radius: 4px;
+    background-color: rgba(255, 250, 240, 0.9); /* Floral white with opacity */
+    font-size: 1rem;
+    color: #4a2c12; /* Dark brown */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%238b5a2b" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7.293 7.293a1 1 0 011.414 0L10 8.586l1.293-1.293a1 1 0 111.414 1.414l-2 2a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1.2em;
+}
+
+select:focus {
+    outline: none;
+    border-color: #654321; /* Darker brown */
+    box-shadow: 0 0 0 2px rgba(101, 67, 33, 0.2);
 } 

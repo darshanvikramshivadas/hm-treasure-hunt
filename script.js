@@ -16,43 +16,40 @@ document.addEventListener('DOMContentLoaded', function() {
     const hintBox = document.getElementById('hintBox');
     const hintText = document.getElementById('hintText');
     const errorMessage = document.getElementById('errorMessage');
+    const floorSelect = document.getElementById('floorSelect');
 
-    // Function to check the secret number
-    function checkSecretNumber() {
-        if (secretNumberInput.value === secretNumber) {
-            // Show a random hint
-            const randomHint = hints[Math.floor(Math.random() * hints.length)];
-            hintText.textContent = randomHint;
+    // Function to show hint based on floor selection
+    function showHint() {
+        const selectedFloor = floorSelect.value;
+        if (selectedFloor === "1") {
+            hintText.innerHTML = "Time turns quick inside my cave,<br>I make your leftovers hot and brave.";
+            hintBox.classList.remove('hidden');
+            errorMessage.classList.add('hidden');
+        } else if (selectedFloor === "5") {
+            hintText.innerHTML = "Where people go to get some cash,<br>But not where sunlight makes a splash.<br>Head to the lower floor below,<br>That's where the hidden riches flow";
             hintBox.classList.remove('hidden');
             errorMessage.classList.add('hidden');
         } else {
-            // Hide the hint box and show error message
             hintBox.classList.add('hidden');
             errorMessage.classList.remove('hidden');
-            
-            // Add a small shake animation to the input
-            secretNumberInput.classList.add('shake');
-            setTimeout(() => {
-                secretNumberInput.classList.remove('shake');
-            }, 500);
         }
     }
 
-    // Clear error message when typing
-    secretNumberInput.addEventListener('input', function() {
+    // Clear error message when changing selection
+    floorSelect.addEventListener('change', function() {
         errorMessage.classList.add('hidden');
     });
 
     // Event listeners
-    checkButton.addEventListener('click', checkSecretNumber);
-    
+    checkButton.addEventListener('click', showHint);
+
     // Allow pressing Enter key to check
-    secretNumberInput.addEventListener('keypress', function(event) {
+    floorSelect.addEventListener('keypress', function(event) {
         if (event.key === 'Enter') {
-            checkSecretNumber();
+            showHint();
         }
     });
 
     // Focus the input field when page loads
-    secretNumberInput.focus();
+    floorSelect.focus();
 }); 

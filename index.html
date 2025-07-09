@@ -15,10 +15,14 @@
     <div class="container">
         <h1>Treasure Hunt</h1>
         <div class="input-section">
-            <label for="secretNumber">Enter the secret number to get the hint:</label>
-            <input type="text" id="secretNumber" placeholder="Enter number...">
+            <label for="floorSelect">Which floor are you on?</label>
+            <select id="floorSelect">
+                <option value="">Select floor...</option>
+                <option value="1">1st</option>
+                <option value="5">5th</option>
+            </select>
             <button id="checkButton">Check</button>
-            <p id="errorMessage" class="hidden">Try again! That's not the correct number.</p>
+            <p id="errorMessage" class="hidden">Please select a floor.</p>
         </div>
         <div id="hintBox" class="hidden">
             <h2>Your Hint:</h2>
