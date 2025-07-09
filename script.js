@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to show hint based on floor selection
     function showHint() {
         const selectedFloor = floorSelect.value;
-        if (selectedFloor === "1") {
+        if (selectedFloor === "0") {
             hintText.innerHTML = "Time turns quick inside my cave,<br>I make your leftovers hot and brave.";
             hintBox.classList.remove('hidden');
             errorMessage.classList.add('hidden');
