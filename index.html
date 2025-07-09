@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Hunt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- <div class="logo-corner">
+        <img src="images/logo.jpg" alt="Happiest Minds Logo">
+    </div> -->
+    
+    <div class="container">
+        <h1>Treasure Hunt</h1>
+        <div class="input-section">
+            <label for="secretNumber">Enter the secret number to get the hint:</label>
+            <input type="text" id="secretNumber" placeholder="Enter number...">
+            <button id="checkButton">Check</button>
+            <p id="errorMessage" class="hidden">Try again! That's not the correct number.</p>
+        </div>
+        <div id="hintBox" class="hidden">
+            <h2>Your Hint:</h2>
+            <p id="hintText"></p>
+        </div>
+        <div class="treasure-decoration">
+            <i class="fas fa-coins"></i>
+            <i class="fas fa-gem"></i>
+            <i class="fas fa-coins"></i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
