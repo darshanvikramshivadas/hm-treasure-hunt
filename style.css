@@ -137,10 +137,13 @@ button:hover {
 /* Mobile styles */
 @media (max-width: 768px) {
     body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
         background-size: cover;
         background-position: center;
     }
-    
     .container {
         width: 90%;
         max-width: 90%;
@@ -159,10 +162,13 @@ button:hover {
 /* Small mobile styles */
 @media (max-width: 480px) {
     body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
         background-size: cover;
         background-position: center;
     }
-    
     .container {
         width: 95%;
         max-width: 95%;
