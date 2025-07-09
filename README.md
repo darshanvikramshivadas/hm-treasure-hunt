@@ -1,10 +1,10 @@
 # Treasure Hunt Web Page
 
-A simple interactive web page that provides treasure hunt hints when the correct secret number is entered.
+A simple interactive web page that provides treasure hunt hints based on the selected floor.
 
 ## Setup Instructions
 
-1. Make sure you have the following files in the `images` folder:
+1. Make sure you have the following file in the `images` folder:
    - `treasure-map.png` - A treasure map background image
 
 2. Open `index.html` in any modern web browser
@@ -12,17 +12,17 @@ A simple interactive web page that provides treasure hunt hints when the correct
 ## Features
 
 - Clean, responsive design
-- Secret number verification
-- Random hint generation
-- Visual feedback for incorrect entries
+- Floor selection dropdown (Ground floor or 5th floor)
+- Displays a poetic hint based on the selected floor
+- Visual feedback for invalid selection
 - Keyboard support (Enter key)
 
 ## How to Use
 
-1. Enter the secret number in the input field
+1. Select your floor from the dropdown (Ground floor or 5th floor)
 2. Click "Check" or press Enter
-3. If the number is correct, a random hint will be displayed
-4. If the number is incorrect, an error message will appear
+3. The corresponding hint will be displayed in a poem format
+4. If no floor is selected, an error message will appear
 
 ## Files
 
