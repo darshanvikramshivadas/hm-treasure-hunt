@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function showHint() {
         const selectedFloor = floorSelect.value;
         if (selectedFloor === "0") {
-            hintText.innerHTML = "Time turns quick inside my cave,<br>I make your leftovers hot and brave.";
+            hintText.innerHTML = "Where people go to get some cash,<br>But not where sunlight makes a splash.<br>Head to the lower floor below,<br>That's where the hidden riches flow";
             hintBox.classList.remove('hidden');
             errorMessage.classList.add('hidden');
         } else if (selectedFloor === "5") {
-            hintText.innerHTML = "Where people go to get some cash,<br>But not where sunlight makes a splash.<br>Head to the lower floor below,<br>That's where the hidden riches flow";
+            hintText.innerHTML = "Time turns quick inside my cave,<br>I make your leftovers hot and brave.";
             hintBox.classList.remove('hidden');
             errorMessage.classList.add('hidden');
         } else {
